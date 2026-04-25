@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ярик музыка</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="11.png" sizes="32x32" type="image/png">
+
+</head>
+<body>
+    <div class="audio-player">
+        <!-- Обложка -->
+        <div class="cover-container">
+            <img class="cover" src="./covers/cover1.jpg" alt="Обложка текущего трека">
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Информация о треке -->
+        <div class="track-info">
+            <h3 class="track-title">Gleb Korolev — Не поле чудес</h3>
+            <div class="time-display">
+                <span class="current-time">0:00</span> /
+                <span class="duration">0:00</span>
+            </div>
+        </div>
+
+        <!-- Прогресс-бар -->
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Кнопки управления -->
+        <div class="controls">
+            <button class="prev">⏮</button>
+            <button class="play-pause">▶</button>
+            <button class="next">⏭</button>
+        </div>
+
+        <!-- Аудиоэлемент -->
+        <audio class="audio-source">
+            <source src="./audio/track1.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает аудио.
+        </audio>
+
+        <!-- Плейлист -->
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <button class="playlist-toggle">ℹ️ Плейлист</button>
+                <button class="mode-toggle">Режим: библиотека</button>
+            </div>
+            <div class="playlist hidden">
+                <ul class="playlist-items"></ul>
+            </div>
+        </div>
+
+        <!-- Добавление треков -->
+        <div class="add-track-section">
+            <label>Добавить трек в плейлист:</label>
+            <select class="add-track">
+                <option value="">Выберите трек для добавления</option>
+            </select>
+            <button class="add-btn">Добавить в плейлист</button>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
