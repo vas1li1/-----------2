@@ -103,11 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     src: 'ст.mp3',
                     cover: 'https://avatars.mds.yandex.net/get-entity_search/5394633/1231015971/SUx104_2x'
 		},
-		{					
-                    title: 'mzlff - в пряничном домике',
-                    src: 'пд.mp3',
-                    cover: 'https://avatars.mds.yandex.net/get-entity_search/1220991/992729828/SUx104_2x'
-		},
 		{				
                     title: 'Женя Гик - Серый человек',
                     src: 'сч.mp3',
